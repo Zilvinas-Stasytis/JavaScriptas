@@ -1,0 +1,16 @@
+.schedule{
+    margin-left: 100px;
+    width: 500px;
+    height: 100px;
+    background-color: aqua;
+    display: flexbox;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 12px;
+    column-gap: 20px;
+}  
+ .schedule li{
+    
+ }
+
+   
