@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kl20.css">
     <title>Document</title>
-
 </head>
 
 <body>
-    <script src="./kl17.js">
-        createSchedule();
+    <script>
+        fetch("https://randomuser.me/api/")
+        .then((response) => response.json())
+        .then((data) => renderPerson(data.results[0]));
+
+        function renderPerson(person) {
+console.log(person);
+        }
     </script>
-
-    <input id="tache" type="text" placeholder="Įrašykite užduotį...">
-    <button id="createTask" type="submit">Pridėti užduotį</button>
-
 </body>
 
 </html>
