@@ -11,12 +11,12 @@
 
 <body>
     <script>
-        fetch("https://randomuser.me/api/")
+        fetch("https://magnetic-melon-yam.glitch.me")
         .then((response) => response.json())
-        .then((data) => renderPerson(data.results[0]));
+        .then((data) => renderPerson(data.results));
 
-        function renderPerson(person) {
-console.log(person);
+         function renderPerson(person) {
+            
         }
     </script>
 </body>
