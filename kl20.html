@@ -12,13 +12,35 @@
 <body>
     <script>
         fetch("https://magnetic-melon-yam.glitch.me")
-        .then((response) => response.json())
-        .then((data) => renderPerson(data.results));
+            .then((response) => response.json())
+            .then((data) => lirePersonne(data));
 
-         function renderPerson(person) {
-            
+        function lirePersonne(person) {
+            person.forEach(record => console.log(record));
+            let lentele = document.createElement("table");
+            document.body.append(lentele);
+            let eilute = document.createElement("tr");
+            lentele.append(tr);
+            let grafa = document.createElement("td");
+            eilute.append(grafa);
         }
+
+
     </script>
+
+    <form>
+        <div>
+            <input type="text" id="nom">
+        </div>
+        <br />
+        <div>
+            <input type="text" id="prenom">
+        </div>
+        <br />
+        <div>
+            <button onclick="lirePersonne" type="submit" id="envoie"> Filter </button>
+        </div>
+    </form>
 </body>
 
 </html>
